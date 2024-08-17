@@ -7,7 +7,7 @@ import { RouterLink, RouterView } from 'vue-router';
   <div class="container">
     <header>
       <div class="wrapper">
-        <h1>Stuut</h1>
+        <h1>StockVision</h1>
         <nav>
           <RouterLink to="/">Home</RouterLink>
           <RouterLink to="/about">About</RouterLink>
@@ -42,12 +42,12 @@ header {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 nav {
   width: 100%;
-  font-size: 12px;
+  font-size: 1rem;
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -55,6 +55,7 @@ nav {
 
 nav a.router-link-exact-active {
   color: var(--color-text);
+  font-size: 1.5rem;
 }
 
 nav a.router-link-exact-active:hover {

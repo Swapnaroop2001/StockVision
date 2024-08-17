@@ -1,5 +1,6 @@
 <template>
-  <div>This project is a simple application built with Vue and Vite.</div>
+  <div>"This is an updated version of the project that I would have developed if I had more time."
+  </div>
 </template>
 
 <style></style>
