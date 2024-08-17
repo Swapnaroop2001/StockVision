@@ -26,6 +26,7 @@ const searchStock = () => {
   margin: 20px 0;
 }
 
+
 .search-container {
   position: relative;
   display: flex;

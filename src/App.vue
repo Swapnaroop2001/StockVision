@@ -43,6 +43,7 @@ header {
 
 h1 {
   font-size: 3rem;
+  font-weight: 600
 }
 
 nav {

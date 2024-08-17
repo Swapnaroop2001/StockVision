@@ -232,12 +232,33 @@ const topOfficers = computed(() => {
 }
 
 .stock-summary {
-  background-color: #fff;
-  padding: 25px;
+  background: linear-gradient(to top left, #ffffff, #f9f9f9);
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  animation: slideIn 0.8s ease-out;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  padding: 25px;
   border: 1px solid #e0e0e0;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden; /* Ensure the circle does not overflow */
+}
+
+.stock-summary:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.stock-summary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 25%;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  transform: rotate(45deg);
+  z-index: 0;
 }
 
 .stock-summary h2 {
@@ -247,18 +268,23 @@ const topOfficers = computed(() => {
   border-bottom: 2px solid #f0f0f0;
   padding-bottom: 10px;
   font-weight: 600;
+  position: relative;
+  z-index: 1;
 }
 
 .stock-summary p {
   font-size: 1rem;
   color: #555;
   line-height: 1.6;
+  position: relative;
+  z-index: 1;
 }
 
 .stock-summary p::first-line {
   font-weight: bold;
   color: #333;
 }
+
 
 @keyframes fadeIn {
   from { opacity: 0; }
