@@ -50,3 +50,9 @@ npm run dev
 ```
 
 Open `http://localhost:5173/` in your browser to see the project.
+
+## Sample Image
+
+Here’s a sample image for reference:
+
+![Sample Image](path/to/your/image.png)
