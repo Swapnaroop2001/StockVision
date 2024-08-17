@@ -55,4 +55,4 @@ Open `http://localhost:5173/` in your browser to see the project.
 
 Here’s a sample image for reference:
 
-![Sample Image](path/to/your/image.png)
+![Sample Image](https://github.com/Swapnaroop2001/StockVision/blob/main/src/assets/aapl.png)
