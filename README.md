@@ -58,4 +58,4 @@ Here’s a sample image for reference:
 ![Sample Image](https://github.com/Swapnaroop2001/StockVision/blob/main/src/assets/aapl.png)
 
 ## Stock News sample image.
-![Sample Image](https://github.com/Swapnaroop2001/StockVision/blob/main/src/assets/aapl.png)
+![Sample Image](https://github.com/Swapnaroop2001/StockVision/blob/main/src/assets/stock%20news.png)
