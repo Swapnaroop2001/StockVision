@@ -2,8 +2,28 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 import yfinance as yf
 
+import tickertick as tt
+import tickertick.query as query
+
 app = Flask(__name__)
 CORS(app)
+
+@app.route('/api/stock/<string:ticker>/news', methods=['GET'])
+def get_stock_news(ticker):
+    try:
+        # Fetch the news stories for the given ticker
+        feed = tt.get_feed(
+            query=query.And(
+                query.BroadTicker(ticker),
+                query.StoryType(query.StoryTypes.News)  # Adjust as necessary
+            )
+        )
+        # Convert the feed to JSON format
+        news = [story.to_dict() for story in feed]
+        return jsonify(news)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+
 
 @app.route('/api/welcome', methods=['GET'])
 def welcome():

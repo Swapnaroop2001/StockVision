@@ -57,7 +57,7 @@
 
 
 <script setup lang="ts">
-import { defineProps, computed } from 'vue';
+import { defineProps, computed, onMounted, ref } from 'vue';
 
 interface Stock {
   name: string;
@@ -75,6 +75,12 @@ interface Stock {
   volume: number;
 }
 
+interface NewsStory {
+  title: string;
+  link: string;
+}
+
+
 interface CompanyOfficer {
   name: string;
   age: number;
@@ -86,7 +92,24 @@ interface CompanyOfficer {
   yearBorn: number;
 }
 
+
 const props = defineProps<{ stock: Stock | null }>();
+
+const newsStories = ref<NewsStory[]>([]);
+  onMounted(async () => {
+  if (props.stock) {
+    await fetchNews(props.stock.symbol);
+  }
+});
+
+const fetchNews = async (ticker: string) => {
+  try {
+    const response = await fetch(`/api/stock/${ticker}/news`);
+    newsStories.value = await response.json();
+  } catch (error) {
+    console.error("Error fetching news:", error);
+  }
+};
 
 const percentageChange = computed(() => {
   if (props.stock) {
@@ -371,8 +394,7 @@ const topOfficers = computed(() => {
 
 .no-data {
   text-align: center;
-  padding: 25px;
-  color: #aaa;
+  color: #000000;
 }
 
 @keyframes fadeIn {

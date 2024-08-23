@@ -1,6 +1,6 @@
 <!-- src/App.vue -->
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router';
+import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
@@ -43,7 +43,7 @@ header {
 
 h1 {
   font-size: 3rem;
-  font-weight: 600
+  font-weight: 600;
 }
 
 nav {

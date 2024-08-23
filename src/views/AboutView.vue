@@ -1,6 +1,9 @@
-<template>
-  <div>"This is an updated version of the project that I would have developed if I had more time."
-  </div>
-</template>
+<script setup lang="ts">
+import About from '../components/About.vue'
+</script>
 
-<style></style>
+<template>
+  <main>
+    <About/>
+  </main>
+</template>
