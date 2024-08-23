@@ -36,7 +36,7 @@
   // Fetch news stories based on the provided ticker
   const fetchNews = async (searchTicker: string) => {
     try {
-      const response = await fetch(`https://api.tickertick.com/feed?q=tt:${searchTicker}&n=200`)
+      const response = await fetch(`https://api.tickertick.com/feed?q=tt:${searchTicker}&n=20`)
       const data = await response.json()
       console.log('API Response:', data)
       newsStories.value = data.stories

@@ -51,8 +51,11 @@ npm run dev
 
 Open `http://localhost:5173/` in your browser to see the project.
 
-## Sample Image
+## Stock Info sample image.
 
 Here’s a sample image for reference:
 
+![Sample Image](https://github.com/Swapnaroop2001/StockVision/blob/main/src/assets/aapl.png)
+
+## Stock News sample image.
 ![Sample Image](https://github.com/Swapnaroop2001/StockVision/blob/main/src/assets/aapl.png)
