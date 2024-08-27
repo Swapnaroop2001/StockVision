@@ -1,8 +1,11 @@
+
+import type DividendchartVue from './Dividendchart.vue';
 <template>
   <div>
-    <StockSearch @search="fetchStockInfo" />
+  <StockSearch @search="fetchStockInfo" />
   </div>
   <StockInfo :stock="stockData" />
+  <DividendchartVue/>
 </template>
 
 <script setup lang="ts">

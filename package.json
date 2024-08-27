@@ -16,15 +16,24 @@
   "dependencies": {
     "@vue/cli-service": "^5.0.8",
     "@vue/compiler-sfc": "^3.4.36",
-    "axios": "^1.7.3",
+    "apexcharts": "^3.52.0",
+    "axios": "^1.7.5",
+    "chart.js": "^4.4.4",
+    "chartjs": "^0.3.24",
+    "echarts": "^5.5.1",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
+    "vue-apexcharts": "^1.6.2",
+    "vue-chartjs": "^5.3.1",
+    "vue-echarts": "^7.0.3",
     "vue-router": "^4.4.3",
-    "vue-toastification": "^2.0.0-rc.5"
+    "vue-toastification": "^2.0.0-rc.5",
+    "vue3-apexcharts": "^1.5.3"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.8.0",
     "@tsconfig/node20": "^20.1.4",
+    "@types/chart.js": "^2.9.41",
     "@types/jsdom": "^21.1.6",
     "@types/node": "^20.14.14",
     "@vitejs/plugin-vue": "^5.0.4",
